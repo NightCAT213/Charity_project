@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/last_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="Последние новости"
+        android:textColor="@color/white"
+        android:layout_margin="14dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="Получить поддержку фонда"
+        android:textColor="@color/white"
+        android:layout_margin="14dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_techhelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="Техподдержка"
+        android:textColor="@color/white"
+        android:layout_margin="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="14dp"
+        android:text="Создано с любовью"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+</LinearLayout>

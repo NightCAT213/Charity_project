@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutvacancyitem"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_vacancyItem_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="106dp"
+        android:layout_x="14dp"
+        android:layout_y="3dp"
+        android:text="Название"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_vacancyItem_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_x="14dp"
+        android:layout_y="37dp"
+        android:text="Адрес"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_vacancyItem_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_x="14dp"
+        android:layout_y="75dp"
+        android:background="@color/button_background"
+        android:minWidth="5dp"
+        android:minHeight="5dp"
+        android:padding="5dp"
+        android:text="4000 Р"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vacancyItem_name" />
+
+</AbsoluteLayout>

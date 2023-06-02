@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/helperFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        tools:layout="@layout/activity_main"
+        android:name="com.example.charity.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        tools:layout="@layout/helper_fragment"
+        android:id="@+id/helperFragment"
+        android:name="com.example.charity.fragment.HelperFragment"
+        android:label="helperFragment" >
+        <action
+            android:id="@+id/action_helperFragment_to_productInfoFragment"
+            app:destination="@id/productInfoFragment" />
+        <action
+            android:id="@+id/action_helperFragment_to_vacancyFragment"
+            app:destination="@id/vacancyFragment" />
+        <action
+            android:id="@+id/action_helperFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_helperFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_helperFragment_to_filtrFragment"
+            app:destination="@id/filtrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bo_fragment"
+        tools:layout="@layout/bo_fragment"
+        android:name="com.example.charity.fragment.settings_fragments.BecomeOrganizerFragment"
+        android:label="BecomeOrganizerFragment" >
+    <action
+        android:id="@+id/action_BOFragment_to_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favourites_fragment"
+        tools:layout="@layout/favourites_fragment"
+        android:name="com.example.charity.fragment.settings_fragments.FavouritesFragment"
+        android:label="FavouritesFragment" >
+    <action
+        android:id="@+id/action_favFragment_to_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gethelp_fragment"
+        tools:layout="@layout/gethelp_fragment"
+        android:name="com.example.charity.fragment.settings_fragments.GetHelpFragment"
+        android:label="GetHelpFragment" >
+    <action
+        android:id="@+id/action_GetHelpFragment_to_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpall_fragment"
+        tools:layout="@layout/helpall_fragment"
+        android:name="com.example.charity.fragment.settings_fragments.HelpAllFragment"
+        android:label="HelpAllFragment" >
+        <action
+            android:id="@+id/action_HelpAllFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/news_fragment"
+        tools:layout="@layout/news_fragment"
+        android:name="com.example.charity.fragment.settings_fragments.LastNewsFragment"
+        android:label="LastNewsFragment" >
+    <action
+        android:id="@+id/action_NewsFragment_to_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tech_fragment"
+        tools:layout="@layout/tech_fragment"
+        android:name="com.example.charity.fragment.settings_fragments.TechHelpFragment"
+        android:label="TechHelpFragment" >
+    <action
+        android:id="@+id/action_TechFragment_to_settingsFragment"
+        app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filtrFragment"
+        tools:layout="@layout/filtr_fragment"
+        android:name="com.example.charity.fragment.nonbasic.FiltrFragment"
+        android:label="FiltrFragment" >
+        <action
+            android:id="@+id/action_filtrFragment_to_helperFragment"
+            app:destination="@id/helperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        tools:layout="@layout/settings_fragment"
+        android:name="com.example.charity.fragment.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_helperFragment"
+            app:destination="@id/helperFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_vacancyFragment"
+            app:destination="@id/vacancyFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_boFragment"
+            app:destination="@id/bo_fragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_favouritesFragment"
+            app:destination="@id/favourites_fragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_gethelpFragment"
+            app:destination="@id/gethelp_fragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_newsFragment"
+            app:destination="@id/news_fragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_techFragment"
+            app:destination="@id/tech_fragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_HelpAllFragment"
+            app:destination="@id/helpall_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productInfoFragment"
+        tools:layout="@layout/product_info_fragment"
+        android:name="com.example.charity.fragment.nonbasic.ProductInfoFragment"
+        android:label="ProductInfoFragment" >
+        <action
+            android:id="@+id/action_productInfoFragment_to_helperFragment"
+            app:destination="@id/helperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        tools:layout="@layout/map_fragment"
+        android:name="com.example.charity.fragment.MapFragment"
+        android:label="mapFragment">
+        <action
+            android:id="@+id/action_mapFragment_to_vacancyFragment"
+            app:destination="@id/vacancyFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_helperFragment"
+            app:destination="@id/helperFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_settingFragment"
+            app:destination="@+id/settingsFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_orgFragment"
+            app:destination="@+id/organisationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vacancyFragment"
+        tools:layout="@layout/vacancy_fragment"
+        android:name="com.example.charity.fragment.VacancyFragment"
+        android:label="vacancyFragment" >
+        <action
+            android:id="@+id/action_vacancyFragment_to_productInfoFragment"
+            app:destination="@id/productInfoFragment" />
+        <action
+            android:id="@+id/action_vacancyFragment_to_helperFragment"
+            app:destination="@id/helperFragment" />
+        <action
+            android:id="@+id/action_vacancyFragment_to_settigsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_vacancyFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+</navigation>

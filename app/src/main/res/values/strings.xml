@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Charity</string>
+    <string name="helper">Каталог</string>
+    <string name="addTovacancy">Добавить в избранное</string>
+    <string name="vacancy">Корзина</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="info">Info</string>
+    <string name="lastnewsmosru">На mos.ru (Москва): <a href="https://www.mos.ru/lp/blagotvoritelnost/">тык</a></string>
+    <string name="lastnewsall">На iz.ru (Общие): <a href="https://iz.ru/tag/blagotvoritelnost">тык</a></string>
+    <string name="helpelder">Пожилым: <a href="https://iz.ru/tag/blagotvoritelnost">тык</a></string>
+    <string name="helpadult">Взрослым: <a href="https://iz.ru/tag/blagotvoritelnost">тык</a></string>
+    <string name="helpet">Животным: <a href="https://iz.ru/tag/blagotvoritelnost">тык</a></string>
+    <string name="helpchild">Детям: <a href="https://iz.ru/tag/blagotvoritelnost">тык</a></string>
+    <string name="helpecology">Экологии: <a href="https://iz.ru/tag/blagotvoritelnost">тык</a></string>
+    <string name="gethelp1">Получить поддержку: <a href="https://xn----dtbbchrrdshhzimw2lwb.xn--p1ai/poluchit-pomoshch/">тык</a></string>
+    <string name="gethelp2">Получить поддержку: <a href="https://mayak.fund/anketa">тык</a></string>
+    <string name="gethelp3">Получить поддержку: <a href="https://foodbankrus.ru/nuzhna-pomosch/anketa/">тык</a></string>
+</resources>

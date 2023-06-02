@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_helper"
+        android:icon="@drawable/ic_helper" android:title="Помощь"/>
+    <item android:id="@+id/navigation_vacancy"
+        android:icon="@drawable/ic_vacancy" android:title="Вакансии"/>
+    <item android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_baseline_map" android:title="Карта"/>
+    <item android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_baseline_person" android:title="Кабинет"/>
+
+</menu>
