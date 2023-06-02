@@ -41,9 +41,6 @@ public class GetHelpFragment extends Fragment {
         TextView t1 = view.findViewById(R.id.link3);
         t1.setMovementMethod(LinkMovementMethod.getInstance());
 
-        TextView t3 = view.findViewById(R.id.link4);
-        t3.setMovementMethod(LinkMovementMethod.getInstance());
-
         return view;
     }
 }
